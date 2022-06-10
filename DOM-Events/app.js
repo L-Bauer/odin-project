@@ -7,11 +7,9 @@ content.textContent = 'This is the glorious text-content!';
 
 container.appendChild(content);
 
-const p = document.createElement('p');                     
-// creates a new div referenced in the variable 'p'
-p.style.color = 'red';                                      
-// adds the indicated style rule
-p.style.cssText = 'color: red; background: white;';          
-// adds several style rules
-p.setAttribute('style', 'color: blue; background: white;');    
-// adds several style rules
+const pRedText = document.createElement('p');                     
+// creates a new p referenced in the variable 'p'
+pRedText.style.color = 'Red';
+pRedText.textContent = 'Hey I’m red!';
+
+container.appendChild(pRedText);
